@@ -1,6 +1,5 @@
-import React, { useEffect, useState } from 'react'
+import  { useState } from 'react'
 import Navigation from './Navigation'
-import Mainpage from './Mainpage'
 import { Outlet } from 'react-router-dom'
 import { useSelector } from 'react-redux'
 import { useDispatch } from 'react-redux';
