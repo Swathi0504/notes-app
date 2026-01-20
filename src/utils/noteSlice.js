@@ -3,7 +3,7 @@ import { createSlice } from "@reduxjs/toolkit";
 const loadfromlocalstroage = () => {
     try{
        const data = localStorage.getItem("Mynotes");
-       return data ? JSON.parse(data) : { notes:[], createModal:false };
+       return data ? JSON.parse(data) : { notes:[], createModal:false , searchText:"",selectedTag:"All"};
     }
     catch(e) {
       console.error("Failed to load from localStorage", e);

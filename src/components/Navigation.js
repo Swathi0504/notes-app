@@ -31,7 +31,7 @@ const Navigation = () => {
       {/* Create Note */}
       <button
         onClick={() => dispatch(isCreate(true))}
-        className="
+        className=" 
           w-full flex items-center justify-center gap-2
           mb-8 px-4 py-3 rounded-xl
           bg-gray-900 text-white

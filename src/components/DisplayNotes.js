@@ -15,6 +15,7 @@ import {
 import { removeNotes, updateNotes } from "../utils/noteSlice";
 
 const DisplayNotes = ({ item }) => {
+  console.log("Hi");
   const path = useLocation().pathname;
   const dispatch = useDispatch();
 
@@ -35,7 +36,7 @@ const DisplayNotes = ({ item }) => {
     dispatch(updateNotes({ id, title, content, tags, pinned, archived: newArchive, trashed }));
   };
 
-  /* ===================== TRASH VIEW ===================== */
+ 
   if (path === "/trash") {
     return (
       <div
